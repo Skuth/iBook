@@ -24,6 +24,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    "@/plugins/accessor"
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -49,7 +50,9 @@ export default {
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: "https://ibook-api.herokuapp.com"
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
