@@ -49,7 +49,7 @@ export default class Books extends VuexModule {
     commit: "SET_SINGLE"
   })
   public async show({ id }: Show) {
-    const book = await $axios.$get(`/book/${id}`)
+    const book = await $axios.$get(`/books/${id}`)
     .catch(() => {})
 
     if (!book) return [];

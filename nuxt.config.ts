@@ -40,7 +40,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
-    "@nuxtjs/style-resources"
+    "@nuxtjs/style-resources",
+    "cookie-universal-nuxt"
   ],
 
   styleResources: {
@@ -51,10 +52,11 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: "https://ibook-api.herokuapp.com"
+    baseURL: "http://localhost:3333"
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extractCSS: true
   }
 }
